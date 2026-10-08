@@ -8,11 +8,13 @@
     <!-- Meaningful Meta Tags -->
     <meta name="description" content="Personal portfolio of Sarika Kona, an Information Science senior at Michigan State University.">
     <meta name="author" content="Sarika Kona">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/SarikaLogo.png" alt="Sarika's logo" width="100"></a>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/SarikaLogo.png" alt="Sarika's logo" class="logo-img"></a>
+        </div>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -21,35 +23,52 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h1>Sarika Kona is a student based in Michigan.</h1>
+        <section class="hero">
+            <div class="hero-card">
+                <h1>Sarika Kona is a student based in Michigan.</h1>
+            </div>
         </section>
+
         <section id="about" aria-labelledby="about-heading">
             <h2>About</h2>
-            <img src="images/sarika-headshot.jpg" alt="Sarika Headshot" width="200">
-            <p>I am a senior at <a href="https://msu.edu/">Michigan State University</a> pursuing a degree in <strong>Information Science</strong> with a minor in <strong>Business</strong>, graduating in <time datetime="2027-05">May 2027</time>. What draws me to technology is its constant evolution. It's a field where there is always something new to learn and cool features to adapt to. I also truly enjoy connecting with others and understanding what they need, which is why I'm pursuing roles like Product Management and Business Analysis, where I can interpret human needs into technical solutions.</p>
+            <img src="images/sarika-headshot.jpg" alt="Sarika Headshot" class="headshot">
+            <p>I am a senior at <a href="https://msu.edu/">Michigan State University</a> pursuing a degree in <strong>Information Science</strong> with a minor in <strong>Business</strong>, graduating in <time datetime="2027-05">May 2027</time>. What draws me to technology is its constant evolution. It's a field where there is always something new to learn and cool features to adapt to. I also truly enjoy connecting with others and understanding what they need, which is why I'm pursuing roles like Product Management and Business Analyst, where I can interpret human needs into technical solutions.</p>
             <p>Beyond the classroom, a major part of my journey at MSU has been my involvement with Women in Computing (WIC). Having served as Social Chair, Outreach Chair, and currently as Vice President, I’ve dedicated much of my college career to cultivating an inclusive community for women entering the technology space. Building this community has been the most rewarding part of my college experience and has directly shaped how I approach my classes and teamwork. My passion for this work has also taken me to national conferences like the Grace Hopper Celebration (GHC) and the Society of Women Engineers (SWE) conference, which gave me the chance to learn from leaders in the field, see what's happening across the industry, and build connections outside of MSU.</p>
         </section>
+
         <section id="projects" aria-labelledby="projects-heading">
             <h2>Projects</h2>
-            <article>
+            
+            <article class="card">
+                <div class="card-tags">
+                    <span class="tag">MIT App Inventor</span>
+                    <span class="tag">UX Research</span>
+                </div>
                 <h3>Midwest Data Insights Mobile App</h3>
                 <p>I co-developed a mobile app in MIT App Inventor that simplified public regional data into an accessible, user-friendly interface. User testing revealed that breaking complex state metrics into simplified visual cards improved data retention and cut navigation time in half. Based on these findings and UX decisions, our team was selected to present at MSU's College of Engineering Design Day.</p>
             </article>
-            <article>
+
+            <article class="card">
+                <div class="card-tags">
+                    <span class="tag">Data Analytics</span>
+                    <span class="tag">Excel</span>
+                </div>
                 <h3>DoorDash Market & Delivery Trends Analysis</h3>
-                <img src="images/Doordash-DataTable.png" alt="DoorDash data" width="200">
                 <p>I analyzed delivery datasets across major U.S. markets in Microsoft Excel using pivot tables and charts to evaluate regional driver performance and customer habits. The analysis revealed distinct spikes in late-night order volume tied to specific regional cuisine preferences across different cities. I translated these raw spreadsheet metrics into visual summaries to demonstrate how targeted, data-driven strategies can optimize delivery efficiency and customer satisfaction.</p>
+                <img src="images/Doordash-DataTable.png" alt="DoorDash data table" class="project-img">
             </article>
         </section>
+
         <section id="contact" aria-labelledby="contact-heading">
-             <h2>Contact</h2>
-             <address>
-                <p>konasari@msu.edu</p>
-             </address>
+            <h2>Contact</h2>
+            <address>
+                <p>Email me at <a href="mailto:konasari@msu.edu">konasari@msu.edu</a></p>
+            </address>
         </section>
     </main>
+
     <footer>
         <p>Copyright &copy; 2026 Sarika Kona</p>
     </footer>
