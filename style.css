@@ -3,10 +3,10 @@
 
 :root {
     --bg-primary: #F9F4F2;
-    --bg-card: #EFE4E1;
+    --bg-card: #DDC8C4;
     --text-primary: #1E0B13;
-    --accent-main: #7B4C5B;
-    --accent-secondary: #896A67;
+    --accent-main: #5C3240;
+    --accent-secondary: #5E4442;
 
     --font-heading: 'Aboreto', display;
     --font-body: 'Plus Jakarta Sans', sans-serif;
