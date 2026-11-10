@@ -15,7 +15,8 @@
 
 ## 3. Final Verification
 - **Final Accessibility Score:** 100 / 100
+### Initial Audit (95/100)
+![PageSpeed Insights Initial Audit](./images/audit-before.png)
 
-![PageSpeed Insights Initial Audit](./assets/Screenshot%202026-11-05%20at%2010.54.37%E2%80%AFPM.png)
-
-![PageSpeed Insights 100 Score](./assets/Screenshot%202026-11-05%20at%2011.18.35%E2%80%AFPM.png)
+### Remediation Audit (100/100)
+![PageSpeed Insights 100 Score](./images/audit-after.png)
