@@ -12,8 +12,15 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <a href="index.html"><img src="images/SarikaLogo.png" alt="Sarika's logo" class="logo-img"></a>
+        <div class="header-top">
+            <div class="logo-container">
+                <a href="index.html"><img src="images/SarikaLogo.png" alt="Sarika's logo" class="logo-img"></a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to dark mode">
+                <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </div>
         <nav aria-label="Main Navigation">
             <ul>
@@ -78,5 +85,7 @@
     <footer>
         <p>Copyright &copy; 2026 Sarika Kona</p>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 </html>

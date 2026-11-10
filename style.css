@@ -12,6 +12,13 @@
     --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
+[data-theme="dark"] {
+    --bg-primary: #181214;
+    --bg-card: #2B1F24;
+    --text-primary: #F3ECE9;
+    --accent-main: #E5B4C2;
+    --accent-secondary: #D4A79F;
+}
 
 * {
     margin: 0;
@@ -25,6 +32,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     padding: 2rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main {
@@ -40,6 +48,15 @@ section {
 header {
     text-align: center;
     margin-bottom: 3rem;
+    position: relative;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 .logo-container {
@@ -76,6 +93,34 @@ header nav a:hover {
     background-color: var(--accent-main);
     color: var(--bg-primary);
     text-decoration: none;
+}
+
+.theme-toggle-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--accent-main);
+    color: var(--bg-primary);
+    transform: translateY(-50%) scale(1.08);
+}
+
+.theme-toggle-btn:focus-visible {
+    outline: 3px solid var(--accent-main);
+    outline-offset: 3px;
 }
 
 
@@ -143,6 +188,7 @@ a:hover, a:focus {
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(30, 11, 19, 0.06);
     text-align: center;
+    transition: background-color 0.3s ease; 
 }
 
 .hero-card h1 {
@@ -154,6 +200,7 @@ a:hover, a:focus {
     padding: 1.75rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(30, 11, 19, 0.06);
+    transition: background-color 0.3s ease;
 }
 
 .card-tags {
