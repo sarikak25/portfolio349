@@ -2,12 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Light / Dark Mode Toggle 
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
+    const siteLogo = document.getElementById('site-logo');
 
     // Load saved theme or default to light
     const currentTheme = localStorage.getItem('portfolio-theme') || 'light';
     if (currentTheme === 'dark') {
         document.body.setAttribute('data-theme', 'dark');
         updateIcon('dark');
+        if (siteLogo) siteLogo.src = 'images/logo-light.png';
     }
 
     // Toggle on click
@@ -17,10 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.removeAttribute('data-theme');
             localStorage.setItem('portfolio-theme', 'light');
             updateIcon('light');
+            if (siteLogo) siteLogo.src = 'images/logo-dark.png';
         } else {
             document.body.setAttribute('data-theme', 'dark');
             localStorage.setItem('portfolio-theme', 'dark');
             updateIcon('dark');
+            if (siteLogo) siteLogo.src = 'images/logo-light.png';
         }
     });
 
