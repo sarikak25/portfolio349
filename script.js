@@ -38,19 +38,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // ScrollReveal.js Library
-    if (typeof ScrollReveal !== 'undefined') {
-        const sr = ScrollReveal({
-            origin: 'bottom',
-            distance: '30px',
-            duration: 800,
-            delay: 150,
-            reset: false
+    // Typed.js Hero Animation
+    if (document.getElementById('typed-roles') && typeof Typed !== 'undefined') {
+        new Typed('#typed-roles', {
+            strings: [
+                'Product Management.',
+                'UX Research and Design.',
+                'Data Analytics.',
+                'Women in Computing.'
+            ],
+            typeSpeed: 45,
+            backSpeed: 25,
+            backDelay: 1800,
+            startDelay: 300,
+            loop: true,
+            cursorChar: '|'
         });
-
-        sr.reveal('.hero-card', { delay: 200 });
-        sr.reveal('#about h2, #about .about-grid', { interval: 150 });
-        sr.reveal('#projects h2, .projects-grid .card', { interval: 200 });
-        sr.reveal('#contact', { delay: 150 });
     }
+
+    // Tippy.js Tooltips
+    if (typeof tippy !== 'undefined') {
+        tippy('[data-tippy-content]', {
+            theme: 'portfolio',
+            animation: 'shift-away',
+            duration: [200, 150],
+            arrow: true
+        });
+    }
+
 });
